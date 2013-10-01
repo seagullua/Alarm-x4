@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="ua.in.chaika.Alarm"
+      android:versionCode="5"
+      android:versionName="1.04">
+
+    <uses-sdk android:minSdkVersion="8"
+	android:targetSdkVersion="17"/>
+    
+    <supports-screens android:largeScreens="true"
+                      android:smallScreens="true"
+                      android:anyDensity="true"
+                      android:normalScreens="true"/>
+    
+	<uses-permission android:name="android.permission.INTERNET"/> 
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <application android:label="@string/app_name"
+        android:icon="@drawable/icon"
+		android:theme="@style/LightTheme" android:allowBackup="true"
+		android:name="ua.in.chaika.Alarm.App"
+		>"
+
+        <activity android:name="ua.in.chaika.Alarm.HelloCpp"
+                  android:label="@string/app_name"
+                  android:screenOrientation="sensorLandscape"
+                  android:launchMode="singleTask"
+                  android:configChanges="orientation"
+                  
+                  >
+                  
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ua.in.chaika.Alarm.TurnOnScreen"
+            
+            android:label="@string/app_name"
+                  android:screenOrientation="sensorLandscape"
+                  android:launchMode="singleTask"
+                  android:configChanges="orientation"
+            
+            />
+
+   		 
+   		 <activity android:name="ua.in.chaika.Alarm.SetAlarm"
+   		     android:permission="com.android.alarm.permission.SET_ALARM">
+   		     <intent-filter>
+   		     	<action android:name="android.intent.action.SET_ALARM" />
+   		     	<category android:name="android.intent.category.DEFAULT" />
+   		     </intent-filter>
+   		 </activity>
+        
+    
+        <receiver   android:name="ua.in.chaika.Alarm.Planer"></receiver>
+    </application>
+    
+    
+</manifest> 

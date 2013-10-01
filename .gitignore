@@ -11,3 +11,15 @@
 *.lai
 *.la
 *.a
+
+Thumbs.db
+*.keystore
+*.psd
+*.__mk
+
+local.properties
+*.user
+*.user.*
+debug
+*.pdb
+*.apk
