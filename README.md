@@ -25,3 +25,10 @@ Key features
 - New jokes every day
 - New unique wallpaper every day
 
+Screens
+-----------
+![Turn on alarm](https://raw.github.com/seagullua/Alarm-x4/master/Screens/2013-05-15%2019.11.32.png)
+![Puzzle to turn off](https://raw.github.com/seagullua/Alarm-x4/master/Screens/2013-05-15%2019.18.17.png)
+![Promt to turn off](https://raw.github.com/seagullua/Alarm-x4/master/Screens/2013-05-15%2019.15.42.png)
+![Time selection](https://raw.github.com/seagullua/Alarm-x4/master/Screens/2013-05-15%2019.12.03.png)
+![In the morning](https://raw.github.com/seagullua/Alarm-x4/master/Screens/2013-05-15%2019.18.49.png)
